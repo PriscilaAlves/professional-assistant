@@ -8,14 +8,14 @@ socket.addEventListener('open', function (event) {
 
 // Listen for messages
 socket.addEventListener('message', function (event) {
-    message = JSON.parse(event.data)
+    const message = JSON.parse(event.data)
     switch (message.cmd) {
       case 'ipAddress':
         document.getElementById('ipAddress').innerHTML = message.value
         break
       default:
-        document.getElementById('message').innerHTML = message.cmd
-
+        document.getElementById('emoji').src = 'resources/images/' + message.cmd + ".svg"
+        document.getElementById('message').innerHTML = message.value
     }
     console.log('Message from server ', event.data)
 });

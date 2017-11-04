@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Priscila Alves & Joao Santo",
+  "author": "Priscila Alves & Joao Santos",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "http-proxy": "^1.16.2",
     "ip": "^1.1.5",
+    "open": "0.0.5",
     "ws": "^3.3.0"
   }
 }
